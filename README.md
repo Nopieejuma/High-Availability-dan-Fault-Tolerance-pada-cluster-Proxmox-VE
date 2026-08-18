@@ -4,17 +4,16 @@ Repositori ini berisi dokumentasi, skenario pengujian, dan skrip otomatisasi unt
 
 ---
 
-## 📌 Ringkasan Penelitian
+## Ringkasan Penelitian
 
 * **Judul Proyek Akhir:** High Availability (HA) dan Fault Tolerance pada Cluster Proxmox VE
 * **Penulis:** Novia Zulma (NIM. 2355301165)
 * **Pembimbing:** Muhammad Arif Fadhly Ridha, S.Kom., M.T.
 * **Institusi:** Program Studi Teknik Informatika, Politeknik Caltex Riau (2025/2026)
-
 ---
+## Arsitektur & Spesifikasi Perangkat
 
-## 🛠️ Arsitektur & Spesifikasi Perangkat
-
+![Topologi Cluster Proxmox](Top.drawio%20(1).png)
 Sistem dibangun menggunakan **3 Server Fisik (Bare-Metal)** yang membentuk satu cluster Proxmox VE terintegrasi dengan Ceph Storage sebagai *shared storage* terdistribusi.
 
 ### Spesifikasi Node Cluster
@@ -28,7 +27,7 @@ Sistem dibangun menggunakan **3 Server Fisik (Bare-Metal)** yang membentuk satu 
 
 ---
 
-## ⚙️ Skenario Pengujian
+## Skenario Pengujian
 
 1. **Skenario 1: Power Failure (Node Shutdown)**
    * **Deskripsi:** Simulasi pemutusan daya mendadak dengan mencabut kabel power pada node aktif yang sedang menjalankan VM (`S01`).
@@ -40,7 +39,7 @@ Sistem dibangun menggunakan **3 Server Fisik (Bare-Metal)** yang membentuk satu 
 
 ---
 
-## 📊 Hasil Pengujian & Evaluasi Performa
+## Hasil Pengujian & Evaluasi Performa
 
 ### 1. Pengujian High Availability (Power Failure)
 Pengujian dilakukan sebanyak 15 kali iterasi otomatisasi menggunakan Script Bash dan PowerShell ICMP Timestamping:
@@ -65,7 +64,7 @@ Pengujian dilakukan sebanyak 15 kali iterasi otomatisasi menggunakan Script Bash
 
 ---
 
-## 💻 Skrip Otomatisasi Monitoring
+## Skrip Otomatisasi Monitoring
 
 Pengukuran parameter dilakukan secara presisi dengan skrip otomatis:
 
@@ -78,7 +77,7 @@ Pengukuran parameter dilakukan secara presisi dengan skrip otomatis:
 
 ---
 
-## 📝 Kesimpulan & Saran
+## Kesimpulan & Saran
 
 ### Kesimpulan
 1. Cluster 3 node berbasis Proxmox VE Community Edition dan Ceph Storage berhasil mengeksekusi *failover* otomatis tanpa kehilangan data (*zero data loss*).

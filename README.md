@@ -13,7 +13,7 @@ Proyek ini mengimplementasikan infrastruktur *High Availability* (HA) dan *Fault
 
 > 💡 *Upload gambar diagram topologi Anda ke folder docs/ lalu ubah link gambar di bawah ini.*
 
-![Architecture Diagram](Top.drawio (1).png)
+![Topologi Cluster Proxmox](Top.drawio (1).png)
 
 * **Jumlah Node:** 3 Server Fisik (Node 1, Node 2, Node 3)
 * **Storage Cluster:** Ceph HCI (Hyper-Converged Infrastructure)

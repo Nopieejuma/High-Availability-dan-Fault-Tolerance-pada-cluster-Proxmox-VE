@@ -1,12 +1,10 @@
 # High-Availability-dan-Fault-Tolerance-pada-cluster-Proxmox-VE
 
-# Implementation & Benchmark of High Availability (HA) and Fault Tolerance (FT) on Proxmox VE Cluster with Ceph Storage
-
-Repositori ini berisi dokumentasi arsitektur, skrip otomatisasi pengujian, file konfigurasi, dan data hasil uji coba *failover* serta *recovery* pada kluster Proxmox VE berbasis Ceph Storage.
+Repositori ini berisi dokumentasi arsitektur, skrip otomatisasi pengujian, dan data hasil uji coba *failover* serta *recovery* pada kluster Proxmox VE.
 
 ---
 
-## 📌 Deskripsi Proyek
+## Deskripsi Proyek
 Proyek ini mengimplementasikan infrastruktur *High Availability* (HA) dan *Fault Tolerance* (FT) menggunakan 3 node server fisik yang terdistribusi secara terpusat dengan *shared storage* Ceph. Layanan yang dijalankan di atas kluster ini adalah **Mail Server** dan **FTP Server** untuk menguji ketahanan sistem saat terjadi kegagalan (*node crash* maupun *disk failure*).
 
 ---
